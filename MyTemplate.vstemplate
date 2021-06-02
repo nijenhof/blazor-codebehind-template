@@ -1,0 +1,16 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>MyComponent.razor</DefaultName>
+    <Name>Razor Component Code Behind</Name>
+    <Description>Create a new Razor component where code is a separated .cs file.</Description>
+    <TemplateGroupID>AspNetCore</TemplateGroupID>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.razor" ReplaceParameters="true">Index.razor</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.razor.cs" ReplaceParameters="true">Index.razor.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
